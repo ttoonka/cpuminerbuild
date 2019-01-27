@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 cd ~
 git clone https://github.com/bubasik/cpuminer-opt-yespower
 
