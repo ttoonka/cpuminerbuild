@@ -11,6 +11,8 @@ git clone https://github.com/ttoonka/yespowerminerbuild
 cd yespowerminerbuild
 chmod +x _script/compile.sh
 chmod +x _script/configure.sh
+sed -i -e 's/\r$//' _script/compile.sh
+sed -i -e 's/\r$//' _script/configure.sh
 _script/compile.sh
 _script/configure.sh
 
