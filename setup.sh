@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 sudo apt-get -y update       
 sudo apt-get -y upgrade  
-sudo apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev leafpad git
+sudo apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev leafpad git make
 sudo apt -y install libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev
-
-
 
 git clone https://github.com/ttoonka/yespowerminerbuild
 
