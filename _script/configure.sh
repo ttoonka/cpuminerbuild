@@ -9,6 +9,6 @@
 
 cat <<EOF > ~/runcpuminer-opt-yespower.sh
 #!/usr/bin/env bash
-cd ~/cpuminer-opt-yespower && screen -dmS $currency.yespower ./cpuminer -a yespower -o stratum+tcp://mine.nlpool.nl:6234 -u $wallet -p c=$currency -q
+cd ~/cpuminer-opt-yespower && screen -dmS $currency.yescryptr32 ./cpuminer -a yescryptr32 -o stratum+tcp://mine.nlpool.nl:6343 -u $wallet -p c=$currency -q
 
 EOF
