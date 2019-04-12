@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-sudo apt-get -y update       
-sudo apt-get -y upgrade  
+sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev leafpad git make
 sudo apt -y install libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev
 
@@ -15,5 +15,5 @@ _script/compile.sh
 _script/configure.sh
 
 cd ~
-chmod +x runcpuminer-opt-yespower.sh
-./runcpuminer-opt-yespower.sh
+chmod +x runcpuminer-opt-yespowerr16.sh
+./runcpuminer-opt-yespowerr16.sh
