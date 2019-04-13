@@ -12,7 +12,6 @@ chmod +x _script/configure.sh
 sed -i -e 's/\r$//' _script/compile.sh
 sed -i -e 's/\r$//' _script/configure.sh
 _script/compile.sh
-cd yespowerminerbuild
 _script/configure.sh
 
 cd ~
