@@ -12,8 +12,9 @@ chmod +x _script/configure.sh
 sed -i -e 's/\r$//' _script/compile.sh
 sed -i -e 's/\r$//' _script/configure.sh
 _script/compile.sh
+cd yespowerminerbuild
 _script/configure.sh
 
 cd ~
-chmod +x runcpuminer-opt-yespowerr16.sh
-./runcpuminer-opt-yespowerr16.sh
+chmod +x runcpuminer.sh
+./runcpuminer.sh
