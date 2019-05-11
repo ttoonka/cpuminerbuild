@@ -15,6 +15,10 @@ sed -i -e 's/\r$//' _script/configure.sh
 _script/compile.sh
 _script/configure.sh
 
+echo always | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
+echo "vm.nr_hugepages=6176" | sudo tee /etc/sysctl.conf
+sudo sysctl -p
+
 cd ~
 chmod +x runcpuminer.sh
 ./runcpuminer.sh
