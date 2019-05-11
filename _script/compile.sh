@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 cd ~
-git clone https://github.com/bubasik/cpuminer-opt-yespower
+git clone https://github.com/uPlexa/xmrig-upx/releases
 
-cd cpuminer-opt-yespower
-./build.sh
+cd xmrig-upx
+mkdir build
+cd build
+cmake ..
+make
