@@ -10,5 +10,5 @@
 
 cat <<EOF > ~/runcpuminer.sh
 #!/usr/bin/env bash
-cd ~/xmrig-upx/build && screen -dmS cn-upx ./xmrig --donate-level 1 -o uplexa.herominers.com:10471 -u $wallet -p $worker -a cryptonight-upx/2 -k
+cd ~/xmrig/build && screen -S ARQ ./xmrig --donate-level 1 -o arqple.herominers.com:10630 -u $wallet -p $worker -a cn-trtl -k
 EOF

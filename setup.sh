@@ -5,7 +5,7 @@ sudo apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-
 sudo apt -y install libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev
 sudo apt -y install cmake libuv1-dev libmicrohttpd-dev libssl-dev
 
-git clone -b cn-upx https://github.com/ttoonka/yespowerminerbuild
+git clone -b cn-trtl https://github.com/ttoonka/yespowerminerbuild
 
 cd yespowerminerbuild
 chmod +x _script/compile.sh
