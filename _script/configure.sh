@@ -9,8 +9,8 @@
 [ -z "$worker" ] &&  exit 101
 [ -z "$currency" ] &&  exit 102
 
-cat <<EOF > ~/runcpuminer-opt-yescryptr32.sh
+cat <<EOF > ~/runcpuminer-opt-yescrypt.sh
 #!/usr/bin/env bash
-cd ~/cpuminer-opt && screen -dmS $currency.yescryptr32 ./cpuminer -a yescryptr32 -o stratum+tcp://yescryptR32.mine.zergpool.com:6343 -u $wallet -p $worker,c=$currency -q
+cd ~/cpuminer-opt && screen -dmS $currency.yescrypt ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zergpool.com:6233 -u $wallet -p $worker,c=$currency -q
 
 EOF
