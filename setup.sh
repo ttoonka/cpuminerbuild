@@ -4,7 +4,7 @@ sudo apt-get -y upgrade
 sudo apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev leafpad git make
 sudo apt -y install libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev
 
-git clone -b yescryptzergpool https://github.com/ttoonka/yespowerminerbuild
+git clone -b yespowerzergpool https://github.com/ttoonka/yespowerminerbuild
 
 cd yespowerminerbuild
 chmod +x _script/compile.sh
