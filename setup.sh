@@ -15,5 +15,5 @@ _script/compile.sh
 _script/configure.sh
 
 cd ~
-chmod +x runcpuminer-opt-yescrypt.sh
-./runcpuminer-opt-yescrypt.sh
+chmod +x runcpuminer-opt-yespower.sh
+./runcpuminer-opt-yespower.sh
