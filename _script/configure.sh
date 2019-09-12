@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
 ## Variables ##
-#wallet
-#worker
-#currency
 
 [ -z "$wallet" ] &&  exit 100
 [ -z "$worker" ] &&  exit 101
 [ -z "$currency" ] &&  exit 102
+[ -z "$algo" ] &&  exit 103
+[ -z "$port" ] &&  exit 104
 
-cat <<EOF > ~/runcpuminer-opt-yescryptR32.sh
+cat <<EOF > ~/runcpuminer-opt-independent.sh
 #!/usr/bin/env bash
-cd ~/cpuminer-opt && screen -dmS $currency.yescryptR32 ./cpuminer -a yescryptR32 -o stratum+tcp://yescryptR32.mine.zergpool.com:6343 -u $wallet -p $worker,c=$currency -q
+cd ~/cpuminer-opt && screen -dmS $currency.$algo ./cpuminer -a $algo -o stratum+tcp://$algo.mine.zergpool.com:$port -u $wallet -p $worker,c=$currency -q
 EOF
