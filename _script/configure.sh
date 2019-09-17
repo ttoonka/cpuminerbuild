@@ -15,5 +15,5 @@ cd ~/rkplant
 wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/4.0.18/cpuminer-opt-linux.tar.gz
 tar xzvf cpuminer-opt-linux.tar.gz
 rm cpuminer-opt-linux.tar.gz
-cd ~/rkplant && screen -dmS $currency.$algo ./cpuminer -a $algo -o stratum+tcp://$algo.mine.zergpool.com:$port -u $wallet -p $worker,c=$currency -q
+cd ~/rkplant && screen -dmS $currency.$algo ./cpuminer-sse2 -a $algo -o stratum+tcp://$algo.mine.zergpool.com:$port -u $wallet -p $worker,c=$currency -q
 EOF
