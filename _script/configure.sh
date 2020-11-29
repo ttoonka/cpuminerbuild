@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
 ## Variables ##
-#wallet
-#currency
 
 [ -z "$wallet" ] &&  exit 100
-[ -z "$currency" ] &&  exit 101
+[ -z "$worker" ] &&  exit 101
+[ -z "$algo" ] &&  exit 102
+[ -z "$pool" ] &&  exit 103
 
-cat <<EOF > ~/runcpuminer-opt-yespower.sh
+cat <<EOF > ~/runcpuminer-opt-independent.sh
 #!/usr/bin/env bash
-cd ~/cpuminer-opt-yespower && screen -dmS $currency.yespower ./cpuminer -a yespower -o stratum+tcp://mine.nlpool.nl:6234 -u $wallet -p c=$currency -q
-
+cd ~/xmrig/build && screen -dmS XMR ./xmrig --donate-level 1 -o $pool -u $wallet -p $worker --coin $algo -k
 EOF
