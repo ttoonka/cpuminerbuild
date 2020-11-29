@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev leafpad git make
-sudo apt -y install libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev libuv1-dev libssl-dev libhwloc-dev
+sudo apt -y install git screen
 
 echo always | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
 echo "vm.nr_hugepages=1500" | sudo tee /etc/sysctl.conf
