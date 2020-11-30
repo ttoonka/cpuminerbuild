@@ -1,5 +1,5 @@
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get -y install git screen
 
 echo always | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
