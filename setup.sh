@@ -1,5 +1,6 @@
+#!/usr/bin/env bash
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y upgrade
 sudo apt-get -y install git screen
 
 echo always | sudo tee /sys/kernel/mm/transparent_hugepage/enabled
@@ -11,8 +12,8 @@ git clone https://github.com/ttoonka/cpuminerbuild
 cd cpuminerbuild
 chmod +x _script/compile.sh
 chmod +x _script/configure.sh
-#sed -i -e 's/\r$//' _script/compile.sh
-#sed -i -e 's/\r$//' _script/configure.sh
+sed -i -e 's/\r$//' _script/compile.sh
+sed -i -e 's/\r$//' _script/configure.sh
 _script/compile.sh
 _script/configure.sh
 
